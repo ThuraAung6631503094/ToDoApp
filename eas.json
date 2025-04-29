@@ -4,31 +4,17 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
       "distribution": "internal"
     },
-    "preview": {
-      "distribution": "internal",
+    "production": {
       "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleRelease",
-        "withoutCredentials": true
-      },
-      "env": {
-        "ANDROID_GRADLE_DISTRIBUTION_URL": "https://services.gradle.org/distributions/gradle-7.5.1-all.zip",
-        "JAVA_HOME": "/usr/lib/jvm/java-11-openjdk-amd64"
+        "buildType": "apk"
       }
-    },
-    "preview2": {
-      "android": {
-        "gradleCommand": ":app:assembleRelease"
-      }
-    },
-    "preview3": {
-      "developmentClient": true
-    },
-    "production": {}
+    }
   },
   "submit": {
     "production": {}
