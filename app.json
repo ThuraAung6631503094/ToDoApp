@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -20,9 +19,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.thuraaung.ToDoListApp",
-      "buildType": "apk",
-      "gradleCommand": ":app:assembleRelease"
+      "package": "com.thuraaung.ToDoListApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
