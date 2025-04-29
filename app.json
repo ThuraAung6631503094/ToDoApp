@@ -19,10 +19,18 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.thuraaung.ToDoListApp",
+      "buildType": "apk",
+      "gradleCommand": ":app:assembleRelease"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f4279cd3-945b-4eb5-96db-e36882d31e54"
+      }
     }
   }
 }
